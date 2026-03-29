@@ -7,7 +7,7 @@
 
 class DisplayManager {
 public:
-    DisplayManager() : _oled(OLED_WIDTH, OLED_HEIGHT, &Wire, OLED_RESET_PIN) {}
+    DisplayManager() : _oled(OLED_WIDTH, OLED_HEIGHT, &Wire1, OLED_RESET_PIN) {}
 
     bool begin() {
         if (!_oled.begin(SSD1306_SWITCHCAPVCC, OLED_I2C_ADDR)) {

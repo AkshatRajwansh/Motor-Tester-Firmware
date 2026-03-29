@@ -424,8 +424,10 @@ void setup() {
     pinMode(BUTTON_PIN, INPUT_PULLUP);
 
     // ── I2C Bus 0: OLED + AS5600 ─────────────────────────────
-    Wire.begin();
+    Wire.begin();            // Bus 0 → AS5600
     Wire.setClock(400000);
+    Wire1.begin();           // Bus 1 → OLED
+    Wire1.setClock(400000);
 
     if (!display.begin()) {
         Serial.println("ERROR: OLED not found");
