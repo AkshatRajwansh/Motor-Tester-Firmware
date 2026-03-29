@@ -1,16 +1,3 @@
-// ================================================================
-//  Servo Motor Test JIG — Main Application
-//  Platform:  Teensy 4.1
-//  Framework: Arduino / PlatformIO
-//
-//  Hardware connections (see config.h for pin numbers):
-//    Wire  (18/19) → OLED SSD1306 + AS5600 encoder
-//    Wire2 (24/25) → INA219 current sensor
-//    HX711         → DAT pin 3 / CLK pin 2
-//    Servo PWM     → pin 9
-//    Button SW1    → pin 0 (INPUT_PULLUP, active LOW)
-// ================================================================
-
 #include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_INA219.h>
@@ -23,7 +10,6 @@
 #include "test_results.h"
 #include "report.h"
 
-// ── Global peripherals ────────────────────────────────────────
 DisplayManager  display;
 AS5600Driver    encoder;
 ServoController servo;
@@ -32,7 +18,7 @@ HX711           loadCell;
 
 TestResults results;
 
-// ── State machine ─────────────────────────────────────────────
+// define the 8 STeps
 enum class AppState {
     WELCOME,
     PHASE1_STARTING,
@@ -53,7 +39,7 @@ enum class AppState {
 
 AppState appState = AppState::WELCOME;
 
-// ── Button debounce ───────────────────────────────────────────
+// button press check, also 50ms hold time so normal noise is not confused with actual press
 bool buttonPressed() {
     if (digitalRead(BUTTON_PIN) == LOW) {
         delay(50);
@@ -69,15 +55,15 @@ void waitForButton() {
     while (!buttonPressed()) delay(20);
 }
 
-// ── Sensor reads ─────────────────────────────────────────────
+// Sensor reads
 float readCurrentMA() {
     return ina219.getCurrent_mA();
 }
 
 float readForceGrams() {
     if (loadCell.is_ready()) {
-        float raw = loadCell.get_units(3);  // average of 3 readings
-        return raw;                          // calibrated in setup()
+        float raw = loadCell.get_units(3);  // average of 3 readings, normal usage in library
+        return raw;                          
     }
     return 0.0f;
 }
@@ -86,7 +72,7 @@ float readAngleDeg() {
     return encoder.readZeroedDegrees();
 }
 
-// ── STEP 1: Sweep Test ────────────────────────────────────────
+// STEP 1: Sweep Test
 void runSweepTest() {
     display.showPhaseHeader("1: Sweep Test");
     delay(800);
@@ -129,7 +115,7 @@ void runSweepTest() {
     delay(1500);
 }
 
-// ── STEP 2: Position Accuracy ─────────────────────────────────
+// STEP 2: Position Accuracy
 void runPositionAccuracyTest() {
     const float targets[] = {0.0f, 45.0f, 90.0f, 135.0f, 180.0f};
     results.posCount = 0;
@@ -156,7 +142,7 @@ void runPositionAccuracyTest() {
     ReportPrinter::printPositionAccuracy(results);
 }
 
-// ── STEP 3: Repeatability ─────────────────────────────────────
+// STEP 3: Repeatability 
 void runRepeatabilityTest() {
     display.showPhaseHeader("3: Repeatability");
     delay(500);
@@ -191,7 +177,7 @@ void runRepeatabilityTest() {
     ReportPrinter::printRepeatability(results);
 }
 
-// ── STEP 4: Speed & Response ──────────────────────────────────
+// STEP 4: Speed & Response 
 void runSpeedTest() {
     display.showPhaseHeader("4: Speed Test");
     delay(500);
@@ -294,7 +280,7 @@ void runContactDetection() {
     delay(1000);
 }
 
-// ── STEP 7 & 8: Torque vs Angle vs Current ────────────────────
+// STEP 7 & 8: Torque vs Angle vs Current
 void runTorqueTest() {
     display.showPhaseHeader("7&8: Torque Map");
     delay(500);
@@ -324,7 +310,7 @@ void runTorqueTest() {
     ReportPrinter::printTorqueData(results);
 }
 
-// ── STEP 9: Stall Test ────────────────────────────────────────
+// STEP 9: Stall Test 
 void runStallTest() {
     display.showPhaseHeader("9: Stall Test");
     delay(500);
@@ -377,7 +363,7 @@ void runStallTest() {
     ReportPrinter::printStall(results);
 }
 
-// ── STEP 10: Loaded Holding Test ──────────────────────────────
+// STEP 10: Loaded Holding Test 
 void runHoldTest() {
     display.showPhaseHeader("10: Hold Test");
     delay(500);
@@ -486,20 +472,16 @@ void setup() {
     appState = AppState::WELCOME;
 }
 
-// ═════════════════════════════════════════════════════════════
-//  loop()  — simple blocking state machine
-// ═════════════════════════════════════════════════════════════
+// now just calling functions in order
 void loop() {
     switch (appState) {
 
-    // ── WELCOME ──────────────────────────────────────────────
     case AppState::WELCOME:
         display.showWelcome();
         waitForButton();
         appState = AppState::PHASE1_STARTING;
         break;
 
-    // ── PHASE 1 ──────────────────────────────────────────────
     case AppState::PHASE1_STARTING:
         display.showStatus("Phase 1", "Starting...", "Position Tests");
         Serial.println("\n>>> PHASE 1: POSITION TESTS <<<");
@@ -549,7 +531,6 @@ void loop() {
         break;
     }
 
-    // ── PHASE 2 ──────────────────────────────────────────────
     case AppState::PHASE2_STARTING:
         display.showStatus("Phase 2", "Load Tests", "Starting...");
         Serial.println("\n>>> PHASE 2: LOAD / TORQUE TESTS <<<");
@@ -589,7 +570,7 @@ void loop() {
         appState = AppState::DONE;
         break;
 
-    // ── DONE ─────────────────────────────────────────────────
+    // Final
     case AppState::DONE:
         display.showDone();
         servo.moveTo(0);

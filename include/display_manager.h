@@ -19,7 +19,7 @@ public:
         return true;
     }
 
-    // ── Splash / Welcome ─────────────────────────────────────
+    // Starting display, button press prompt
     void showWelcome() {
         _oled.clearDisplay();
         _oled.setTextSize(1);
@@ -31,7 +31,7 @@ public:
         _oled.display();
     }
 
-    // ── Phase header ─────────────────────────────────────────
+    // Phase header
     void showPhaseHeader(const char* title) {
         _oled.clearDisplay();
         _oled.setTextSize(1);
@@ -40,7 +40,7 @@ public:
         _oled.display();
     }
 
-    // ── Generic status (title + up to 3 value lines) ─────────
+    // usual status (title + up to 3 value lines)
     void showStatus(const char* title, const char* line1,
                     const char* line2 = nullptr, const char* line3 = nullptr) {
         _oled.clearDisplay();
@@ -53,7 +53,7 @@ public:
         _oled.display();
     }
 
-    // ── Live sweep data ───────────────────────────────────────
+    // live sweep data
     void showSweep(float angle, float current, float target) {
         _oled.clearDisplay();
         _oled.setTextSize(1);
@@ -76,7 +76,7 @@ public:
         _oled.display();
     }
 
-    // ── Position accuracy row ─────────────────────────────────
+    // Position accuracy row 
     void showPositionTest(float target, float actual, float error) {
         _oled.clearDisplay();
         _oled.setTextSize(1);
@@ -93,7 +93,7 @@ public:
         _oled.display();
     }
 
-    // ── Torque live data ──────────────────────────────────────
+    // Torque data for live show
     void showTorque(float angle, float force_g, float torque_Nmm, float current) {
         _oled.clearDisplay();
         _oled.setTextSize(1);
@@ -110,7 +110,7 @@ public:
         _oled.display();
     }
 
-    // ── Stall detection ───────────────────────────────────────
+    // Stall detection
     void showStall(float angle, float current, float torque) {
         _oled.clearDisplay();
         _oled.setTextSize(1);
@@ -127,7 +127,7 @@ public:
         _oled.display();
     }
 
-    // ── Wait for button prompt ────────────────────────────────
+    //  Wait for button prompt 
     void showPressButton(const char* nextTest) {
         _oled.clearDisplay();
         _oled.setTextSize(1);
@@ -135,11 +135,11 @@ public:
         _oled.drawLine(0, 16, 127, 16, SSD1306_WHITE);
         centered("Next:", 20);
         centered(nextTest, 32);
-        centered(">> Press Button <<", 48);
+        centered("Press Button whenever ready", 48);
         _oled.display();
     }
 
-    // ── Full result summary (scrolled via call) ───────────────
+    // Full result summary of position phase
     void showResultsPhase1(float maxErr, float repeatStd, float t90ms,
                            float overshoot, float peakI) {
         _oled.clearDisplay();
@@ -161,6 +161,7 @@ public:
         _oled.display();
     }
 
+    // full result summary of Torque phase
     void showResultsPhase2(float stallTorque, float stallCurrent,
                            float stallAngle, float holdDrift) {
         _oled.clearDisplay();
@@ -180,7 +181,7 @@ public:
         _oled.display();
     }
 
-    // ── "Test Complete" final screen ──────────────────────────
+    // "Test Complete" final screen 
     void showDone() {
         _oled.clearDisplay();
         _oled.setTextSize(2);
@@ -195,7 +196,7 @@ public:
         _oled.clearDisplay();
         _oled.setTextSize(1);
         _oled.drawRect(0, 0, 128, 12, SSD1306_WHITE);
-        centered("!! ERROR !!", 2);
+        centered("ERROR, restart the system", 2);
         _oled.setCursor(0, 16);
         _oled.print(msg);
         _oled.display();

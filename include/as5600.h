@@ -23,7 +23,7 @@ public:
         return (Wire.endTransmission() == 0);
     }
 
-    // Returns raw 12-bit angle [0–4095]
+    // angle will come in range of [0–4095] in analogue
     uint16_t readRaw() {
         Wire.beginTransmission(AS5600_I2C_ADDR);
         Wire.write(AS5600_REG_ANGLE_H);
@@ -40,12 +40,12 @@ public:
         return rawToDeg(readRaw());
     }
 
-    // Zero the current position as reference
+    // current position will become 0 i.e reference
     void zero() {
         _offset = readRaw();
     }
 
-    // Returns zeroed degrees (handles wraparound)
+    // Returns zeroed degrees, if motor has turned more than once also, the full rotation will be removed
     float readZeroedDegrees() {
         uint16_t raw = readRaw();
         int16_t diff = (int16_t)raw - (int16_t)_offset;
