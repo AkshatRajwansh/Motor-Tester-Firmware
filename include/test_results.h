@@ -1,7 +1,7 @@
 #pragma once
 #include <Arduino.h>
 
-// ── Phase 1 results ──────────────────────────────────────────
+//  Position Test result
 struct SweepPoint {
     float targetDeg;
     float actualDeg;
@@ -29,7 +29,7 @@ struct SpeedResult {
     float    peakCurrentMA;
 };
 
-// ── Phase 2 results ──────────────────────────────────────────
+// Toryq test results
 struct ContactResult {
     float contactAngleDeg;
     float contactForceg;
@@ -77,7 +77,7 @@ struct TestResults {
     HoldResult    hold;
 };
 
-// Compute stats helpers
+// statistic functions to call when needed
 inline float computeMean(float* arr, uint8_t n) {
     float sum = 0;
     for (uint8_t i = 0; i < n; i++) sum += arr[i];

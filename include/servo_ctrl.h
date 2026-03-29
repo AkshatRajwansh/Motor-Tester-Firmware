@@ -19,7 +19,7 @@ public:
         _servo.write((int)deg);
     }
 
-    // Smooth move with configurable step/delay — blocks until done
+    // movement with steps and delay
     void smoothMoveTo(float targetDeg, int stepDeg = 1, int stepDelayMs = 15) {
         float start = _currentDeg;
         float diff  = targetDeg - start;
