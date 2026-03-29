@@ -21,7 +21,7 @@ Here is a detailed explainantion of what is happening in each test and what will
 
 ## Phase 1: No Load Tests
 
-### Step 1 — Sweep Test
+### Step 1 - Sweep Test
 Moves servo 0°→180°→0° in 2° steps. Records angle, current, and timestamp at every step. Shows if the servo tracks commands accurately while moving and if current spikes at any specific angle.
 
 **OLED Display:**
