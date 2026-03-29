@@ -38,7 +38,7 @@ Moves servo 0°→180°→0° in 2° steps. Records angle, current, and timestam
 **Serial Output:**
 ```
 ══════════════════════════════════════════════
-STEP 1: SWEEP TEST — Angle vs Time vs Current
+STEP 1: SWEEP TEST - Angle vs Time vs Current
 ══════════════════════════════════════════════
   t(ms)  | Target(°) | Actual(°) | Current(mA)
   -------|-----------|-----------|------------
@@ -51,7 +51,7 @@ STEP 1: SWEEP TEST — Angle vs Time vs Current
 
 ---
 
-### Step 2 — Position Accuracy
+### Step 2 - Position Accuracy
 Commands 5 angles (0°, 45°, 90°, 135°, 180°), waits for full settle, then reads actual angle. Computes `error = target - actual` for each. Reveals systematic bias or endpoint inaccuracy.
 
 **OLED Display:**
@@ -81,7 +81,7 @@ STEP 2: POSITION ACCURACY
 
 ---
 
-### Step 3 — Repeatability
+### Step 3 - Repeatability
 Moves to 90° seven times from 0° each time. Computes mean and standard deviation of the 7 readings. Low stdDev = tight mechanical consistency. High stdDev = backlash or gear play.
 
 **OLED Display:**
@@ -109,7 +109,7 @@ STEP 3: REPEATABILITY (target 90°)
 
 ---
 
-### Step 4 — Speed & Response
+### Step 4 - Speed & Response
 Commands 0°→90° and samples at high speed. Records rise time (how long to reach 90°), overshoot (how far past 90° it went), settling time (when it stops oscillating), and peak current.
 
 **OLED Display:**
@@ -136,7 +136,7 @@ STEP 4: SPEED & RESPONSE (0° → 90°)
 
 ## Phase 2: Load Tests
 
-### Step 6 — Contact Detection
+### Step 6 - Contact Detection
 Moves forward slowly in 2° steps until load cell force exceeds threshold. Records the contact angle as the reference point for all torque tests.
 
 **OLED Display:**
@@ -160,7 +160,7 @@ STEP 6: CONTACT DETECTION
 
 ---
 
-### Step 7 & 8 — Torque Map
+### Step 7 & 8 - Torque Map
 From contact angle, pushes further in steps. At each step records force, angle, current, and voltage. Computes torque (`F × arm length`) and power (`V × I`). Reports peak torque angle with efficiency (`N·mm/mW`).
 
 **OLED Display:**
@@ -196,7 +196,7 @@ STEP 7 & 8: TORQUE vs ANGLE vs CURRENT
 
 ---
 
-### Step 9 — Stall Test
+### Step 9 - Stall Test
 Continues increasing load until both conditions trigger simultaneously: angle stops changing AND current spikes above threshold. Records stall torque, stall current, and stall angle.
 
 **OLED Display:**
@@ -221,7 +221,7 @@ STEP 9: STALL TEST
 
 ---
 
-### Step 10 — Loaded Hold
+### Step 10 - Loaded Hold
 Holds 90° for 3 seconds under load. Records position drift and current min/max/avg. Low drift + stable current = good servo. High drift or large current swings = weak holding or internal oscillation.
 
 **OLED Display:**
