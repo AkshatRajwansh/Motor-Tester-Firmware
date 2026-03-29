@@ -15,7 +15,7 @@ Hardware Being Used -
 | Servo PWM        | The servo motor being tested                                      |
 
 The Custom Designed Schematic is as such - 
-![PCB Schematic](assets\Schematic.png)
+![PCB Schematic](assets/Schematic.png)
 
 Here is a detailed explainantion of what is happening in each test and what will be displayed in the OLED screen as well as the serial monitor.
 
