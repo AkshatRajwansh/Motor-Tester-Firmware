@@ -4347,7 +4347,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "XT30PW-M:XT30PW-M"
+		(symbol "XT30PW-M_1"
 			(pin_names
 				(offset 1.016)
 			)
@@ -4356,29 +4356,27 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at -7.62 3.302 0)
+			(property "Reference" "J1"
+				(at -3.81 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "XT30PW-M"
-				(at -7.62 -7.62 0)
+			(property "Value" "Battery Input"
+				(at -3.81 4.572 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "XT30PW-M:AMASS_XT30PW-M"
+			(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4557,7 +4555,7 @@
 					(justify bottom)
 				)
 			)
-			(symbol "XT30PW-M_0_0"
+			(symbol "XT30PW-M_1_0_0"
 				(polyline
 					(pts
 						(xy -7.62 2.54) (xy -1.27 2.54)
@@ -4689,16 +4687,16 @@
 					)
 				)
 				(pin power_in line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 5.08)
-					(name "N"
+					(name "1"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "N"
+					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4707,16 +4705,16 @@
 					)
 				)
 				(pin power_in line
-					(at 5.08 0 180)
+					(at 5.08 -2.54 180)
 					(length 5.08)
-					(name "P"
+					(name "2"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "P"
+					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -5590,22 +5588,10 @@
 		(uuid "a5222ff6-c122-42de-b05f-cdd335367606")
 	)
 	(junction
-		(at 158.75 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0c6913a-250c-41ea-9fba-6e531807a2a7")
-	)
-	(junction
 		(at 195.58 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfb706d2-c0c5-40aa-8a56-7a18f5034dcf")
-	)
-	(junction
-		(at 158.75 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c033324f-b415-4c8d-8057-b1b873fbf4aa")
 	)
 	(junction
 		(at 119.38 185.42)
@@ -5618,6 +5604,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c962967e-19fd-475a-9ed8-ab53972c60fe")
+	)
+	(junction
+		(at 162.56 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ccc76266-f2cc-45e4-b6fd-4fc91e9cdf42")
 	)
 	(junction
 		(at 115.57 134.62)
@@ -5638,6 +5630,12 @@
 		(uuid "d64a6829-5ca0-48ff-b785-fa1e98b7bddc")
 	)
 	(junction
+		(at 162.56 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed5a7a32-8f42-40b9-b4ea-fcb38f8362bc")
+	)
+	(junction
 		(at 238.76 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5656,8 +5654,248 @@
 		(uuid "fe14bceb-15ff-4e08-8833-844846729913")
 	)
 	(no_connect
+		(at 212.09 78.74)
+		(uuid "010c81c2-443e-490a-9ece-49acb90323ec")
+	)
+	(no_connect
+		(at 290.83 78.74)
+		(uuid "0cd70fd5-6a42-45ae-86b0-6b3819150cf9")
+	)
+	(no_connect
+		(at 229.87 172.72)
+		(uuid "0d868df7-b173-497d-95da-1d1f92fa1757")
+	)
+	(no_connect
+		(at 228.6 78.74)
+		(uuid "0e663d88-599b-417a-81d1-c5d5ca8e575e")
+	)
+	(no_connect
+		(at 288.29 78.74)
+		(uuid "0eefdde2-825f-4958-8118-f319fa5a3bb7")
+	)
+	(no_connect
+		(at 303.53 102.87)
+		(uuid "1c61fb2b-363f-48c9-8c77-06484feccf19")
+	)
+	(no_connect
+		(at 231.14 78.74)
+		(uuid "1f347532-0de1-44fc-9d19-55a96a2d0d4c")
+	)
+	(no_connect
+		(at 215.9 134.62)
+		(uuid "20429631-14f2-433b-8644-9c51f5bde918")
+	)
+	(no_connect
+		(at 233.68 134.62)
+		(uuid "27b9ab11-1a8b-4755-9587-1a11e0d4d14e")
+	)
+	(no_connect
+		(at 259.08 78.74)
+		(uuid "289581f9-d693-45c5-ad54-145bccd401b3")
+	)
+	(no_connect
+		(at 246.38 78.74)
+		(uuid "3632979b-893f-49fd-8e39-bcfe0f0d0db2")
+	)
+	(no_connect
+		(at 226.06 78.74)
+		(uuid "37a2c6bf-d08b-4c80-9a0f-58b01089f6ea")
+	)
+	(no_connect
+		(at 264.16 78.74)
+		(uuid "3ba525ed-bf6d-419a-91a6-d6d1d47e1ecc")
+	)
+	(no_connect
+		(at 251.46 134.62)
+		(uuid "3da622db-150c-4bdf-9036-db06a199804c")
+	)
+	(no_connect
+		(at 236.22 134.62)
+		(uuid "3f251228-22db-4c88-92a4-8165524f607f")
+	)
+	(no_connect
+		(at 279.4 134.62)
+		(uuid "413549c0-9bcf-4eda-8c85-7a1ed9a1dedd")
+	)
+	(no_connect
+		(at 285.75 134.62)
+		(uuid "42e1aa80-3348-45a3-a2a9-1fbec84e97ae")
+	)
+	(no_connect
+		(at 228.6 134.62)
+		(uuid "42ee155f-8442-4458-a054-975763e1d405")
+	)
+	(no_connect
+		(at 223.52 134.62)
+		(uuid "4429bb47-d79f-4073-bb23-fb60c2ccff4d")
+	)
+	(no_connect
+		(at 241.3 134.62)
+		(uuid "48410088-e7a2-4342-9fcc-04977ee28552")
+	)
+	(no_connect
+		(at 226.06 134.62)
+		(uuid "4d071237-508a-4f33-9d2b-d21fa20baca4")
+	)
+	(no_connect
+		(at 229.87 175.26)
+		(uuid "4ee6ea9e-aa8f-4753-bb6d-6cfbc611f892")
+	)
+	(no_connect
+		(at 274.32 134.62)
+		(uuid "5171360e-5110-465b-8b78-279cf63f981d")
+	)
+	(no_connect
+		(at 160.02 69.85)
+		(uuid "53eaa217-b87b-421f-87fc-0988a011a57d")
+	)
+	(no_connect
+		(at 238.76 134.62)
+		(uuid "58f5ca21-692b-4308-9197-b29f35e2fc46")
+	)
+	(no_connect
+		(at 293.37 134.62)
+		(uuid "59a90c50-0aff-4059-8935-e8ecf0201c5d")
+	)
+	(no_connect
+		(at 180.34 92.71)
+		(uuid "60326586-7b07-499d-8666-06e964e4306d")
+	)
+	(no_connect
+		(at 266.7 78.74)
+		(uuid "62d4012d-adfa-4915-9fa2-cfcf0b150b9e")
+	)
+	(no_connect
+		(at 243.84 134.62)
+		(uuid "62dbf52d-71ac-4271-a1bc-c9163915f9ff")
+	)
+	(no_connect
+		(at 256.54 78.74)
+		(uuid "63a9f490-d8df-4240-8e78-9ab947c898ac")
+	)
+	(no_connect
+		(at 285.75 78.74)
+		(uuid "65f4cc66-0bef-4603-a9d0-1f7704b3afbf")
+	)
+	(no_connect
+		(at 246.38 134.62)
+		(uuid "682d419f-a8e3-4b6d-9289-05eab3015c09")
+	)
+	(no_connect
+		(at 271.78 134.62)
+		(uuid "6aae01e7-f97c-41ef-a51b-f314e36bc39d")
+	)
+	(no_connect
+		(at 271.78 78.74)
+		(uuid "6dcc343f-7fe1-4e33-b6e3-7b7f73ef75c0")
+	)
+	(no_connect
+		(at 274.32 78.74)
+		(uuid "7245f33a-79bb-48f6-ac33-c6bc63f8f7d7")
+	)
+	(no_connect
+		(at 130.81 203.2)
+		(uuid "72f4484c-db20-4b7a-b272-0e85ab2404a6")
+	)
+	(no_connect
+		(at 283.21 78.74)
+		(uuid "76cf6088-c4ce-4d50-8ac7-033c0238609a")
+	)
+	(no_connect
+		(at 281.94 134.62)
+		(uuid "831116c9-03d2-4e48-ac85-d03511c2d195")
+	)
+	(no_connect
+		(at 243.84 78.74)
+		(uuid "84c992a4-fdbe-443f-bb6c-c4f5ab7a0117")
+	)
+	(no_connect
+		(at 231.14 134.62)
+		(uuid "97fef8ad-239f-43ad-a590-aca1fee7873e")
+	)
+	(no_connect
+		(at 293.37 78.74)
+		(uuid "9b3c2284-6558-4969-aed4-90c87b10adb7")
+	)
+	(no_connect
 		(at 276.86 173.99)
 		(uuid "a100af1f-f4bc-4e36-8427-605644b72543")
+	)
+	(no_connect
+		(at 303.53 110.49)
+		(uuid "a31a6173-34ff-48ff-a352-e6f4841efab9")
+	)
+	(no_connect
+		(at 280.67 78.74)
+		(uuid "a61374b3-6a44-4cdc-8949-2610cf061f4b")
+	)
+	(no_connect
+		(at 259.08 134.62)
+		(uuid "a7c0c735-21c4-4c48-a1da-b11cd92e0da7")
+	)
+	(no_connect
+		(at 303.53 99.06)
+		(uuid "a937b8c7-693d-45bd-aac7-9b7af56ce98f")
+	)
+	(no_connect
+		(at 218.44 134.62)
+		(uuid "aa0d3c5f-1077-4097-8442-7b9da57d29e0")
+	)
+	(no_connect
+		(at 295.91 134.62)
+		(uuid "ae0ade83-0362-4984-8500-6586ad74e060")
+	)
+	(no_connect
+		(at 261.62 78.74)
+		(uuid "b2f90d81-bb0e-4396-8cbc-d75b7612ba92")
+	)
+	(no_connect
+		(at 290.83 134.62)
+		(uuid "b31ed9e8-3dd9-4d89-b705-bd2803ab5518")
+	)
+	(no_connect
+		(at 303.53 106.68)
+		(uuid "b943b532-9db9-45c5-a181-2b3986035740")
+	)
+	(no_connect
+		(at 303.53 114.3)
+		(uuid "cc04759a-26ef-49be-91c9-e2e4fafafcf6")
+	)
+	(no_connect
+		(at 261.62 134.62)
+		(uuid "cc5f0822-4a64-451d-8cc7-48122aee96ad")
+	)
+	(no_connect
+		(at 248.92 134.62)
+		(uuid "d4fc7ef4-2e4e-47ae-b3c2-9ae08402a5ca")
+	)
+	(no_connect
+		(at 251.46 78.74)
+		(uuid "d5427cb0-03d0-41e9-b34c-224ce85695ef")
+	)
+	(no_connect
+		(at 254 78.74)
+		(uuid "d693f220-e182-4be4-8468-cc9e5b34bfd3")
+	)
+	(no_connect
+		(at 288.29 134.62)
+		(uuid "d7b47704-a0d3-4c31-9970-f3d290f72045")
+	)
+	(no_connect
+		(at 269.24 134.62)
+		(uuid "e38e2e77-2bb8-46f0-a85f-87e7848ea36f")
+	)
+	(no_connect
+		(at 220.98 78.74)
+		(uuid "e820e2a5-2098-4ee2-995c-b7ff050da31f")
+	)
+	(no_connect
+		(at 248.92 78.74)
+		(uuid "ea11edcc-64e8-4e84-a9e1-a6e8eadfc8d8")
+	)
+	(no_connect
+		(at 223.52 78.74)
+		(uuid "ed0331ee-1f25-41f8-ba70-1e737502dea9")
 	)
 	(wire
 		(pts
@@ -5961,7 +6199,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 125.73) (xy 167.64 125.73)
+			(xy 143.51 125.73) (xy 162.56 125.73)
 		)
 		(stroke
 			(width 0)
@@ -6091,7 +6329,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 118.11) (xy 191.77 118.11)
+			(xy 158.75 118.11) (xy 162.56 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6241,6 +6479,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 125.73) (xy 167.64 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bdb0dbe-9b24-4faf-abb9-0a66cb1cfbcb")
+	)
+	(wire
+		(pts
 			(xy 119.38 118.11) (xy 123.19 118.11)
 		)
 		(stroke
@@ -6301,16 +6549,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 125.73) (xy 158.75 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "827853ad-ef3a-4525-b94b-e923543cf64a")
-	)
-	(wire
-		(pts
 			(xy 198.12 173.99) (xy 198.12 176.53)
 		)
 		(stroke
@@ -6368,6 +6606,16 @@
 			(type default)
 		)
 		(uuid "8df64937-7c85-46be-8c62-0d5bc31c4483")
+	)
+	(wire
+		(pts
+			(xy 162.56 118.11) (xy 191.77 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90d9ed72-e3ea-4ca5-bdb0-17f0b2550d75")
 	)
 	(wire
 		(pts
@@ -6761,7 +7009,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Neosid_SM-NE127_HandSoldering"
 			(at 151.13 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -6840,7 +7088,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder"
 			(at 149.86 193.802 90)
 			(hide yes)
 			(show_name no)
@@ -7079,7 +7327,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 199.898 170.18 90)
 			(hide yes)
 			(show_name no)
@@ -7128,88 +7376,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 195.58 96.52 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19b5aa82-f393-4409-9e2b-ff62fe94b966")
-		(property "Reference" "R8"
-			(at 198.12 95.2499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 198.12 97.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 197.358 96.52 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 195.58 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e08995bc-b299-41e2-9aba-2cf979f84d4e")
-		)
-		(pin "1"
-			(uuid "d9bae0c5-3a00-4e65-9f32-055fda5e0982")
-		)
-		(instances
-			(project "POSHA"
-				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 147.32 118.11 90)
 		(unit 1)
@@ -7241,7 +7407,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 151.13 117.1448 0)
 			(hide yes)
 			(show_name no)
@@ -7398,7 +7564,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 194.31 159.258 90)
 			(hide yes)
 			(show_name no)
@@ -7447,6 +7613,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 195.58 96.52 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "20a6737d-ad9f-414b-bfc8-1f5f1e597da1")
+		(property "Reference" "R8"
+			(at 197.612 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 197.612 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+			(at 197.358 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 195.58 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "92816838-d4b8-4f3d-963e-1f424dc5c51b")
+		)
+		(pin "1"
+			(uuid "d7b6ac7f-e3f4-4058-93ea-22360893725f")
+		)
+		(instances
+			(project "POSHA"
+				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 115.57 120.65 0)
 		(unit 1)
@@ -7479,7 +7726,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 116.5352 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7560,7 +7807,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 110.1852 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7642,7 +7889,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 186.3852 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -8093,7 +8340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b2ef67f-6ce1-4ff8-9858-20990af0bfea")
-		(property "Reference" "MotorConnect"
+		(property "Reference" "MotorConnect1"
 			(at 214.63 156.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8115,7 +8362,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-03P_1x03_P5.00mm"
 			(at 212.09 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -8160,7 +8407,7 @@
 		(instances
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "MotorConnect")
+					(reference "MotorConnect1")
 					(unit 1)
 				)
 			)
@@ -8297,7 +8544,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 112.7252 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -8340,6 +8587,87 @@
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 257.81 71.12 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3f9f2d50-19ac-43e9-a19c-41c939fec1dc")
+		(property "Reference" "R10"
+			(at 259.842 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 259.842 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+			(at 259.588 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 257.81 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "39cba8ae-cd96-4323-bc56-8afb8f10c6bc")
+		)
+		(pin "1"
+			(uuid "1c186717-c1d3-45ee-9c8f-3738f1b8ee33")
+		)
+		(instances
+			(project "POSHA"
+				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -8458,7 +8786,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 168.6052 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -8619,7 +8947,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-03P_1x03_P5.00mm"
 			(at 160.02 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -8786,7 +9114,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 180.0352 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -8866,7 +9194,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-04P_1x04_P5.00mm"
 			(at 175.26 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8915,6 +9243,87 @@
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 238.76 189.23 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "556b2d90-322e-4ebd-933f-d7d7e594dc11")
+		(property "Reference" "R13"
+			(at 240.792 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 240.792 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+			(at 240.538 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 238.76 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7354e00b-06cf-4f12-9ac1-b5a004eb6be4")
+		)
+		(pin "1"
+			(uuid "73b5ec80-ba9b-4f60-b382-ea4f68c84ff7")
+		)
+		(instances
+			(project "POSHA"
+				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -8993,6 +9402,169 @@
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 162.56 121.92 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "581945ec-dcb7-49fc-94ca-19f43926b386")
+		(property "Reference" "R12"
+			(at 165.1 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 165.1 123.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder"
+			(at 164.338 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 162.56 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38c46f28-0003-45eb-bbe4-b08a8c215665")
+		)
+		(pin "2"
+			(uuid "d28dc59a-c7cf-4d58-89b7-21db4a414c62")
+		)
+		(instances
+			(project "POSHA"
+				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 247.65 189.23 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5a02e864-9faf-4e1b-be68-a0c6671cdec1")
+		(property "Reference" "R14"
+			(at 249.682 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 249.682 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+			(at 249.428 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 247.65 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f780b8d0-aa64-4338-888a-e1a819868c46")
+		)
+		(pin "1"
+			(uuid "432e92c5-1fc6-4416-8057-07f13b2282a5")
+		)
+		(instances
+			(project "POSHA"
+				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -9344,7 +9916,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 171.1452 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -9387,6 +9959,233 @@
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "XT30PW-M_1")
+		(lib_id "XT30PW-M:XT30PW-M")
+		(at 156.21 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "74793dc1-8caa-4048-b2e8-00a3f0736f84")
+		(property "Reference" "J3"
+			(at 151.892 152.908 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Battery Input"
+			(at 152.4 152.908 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "AMASS"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5 mm"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "None"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=eda"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "1.2"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=snap"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "XT30PW-M"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Amass"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SNAPEDA_PN" "XT30PW-M"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "c9e52a99-1fae-40a5-995d-e3f3931c81c1")
+		)
+		(pin "2"
+			(uuid "36e37242-2190-4ece-a941-87ad7a527b55")
+		)
+		(instances
+			(project "POSHA"
+				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9505,7 +10304,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Teensy:Teensy41"
 			(at 260.35 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9862,7 +10661,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-05P_1x05_P5.00mm"
 			(at 281.94 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -10076,234 +10875,6 @@
 		)
 	)
 	(symbol
-		(lib_id "XT30PW-M:XT30PW-M")
-		(at 111.76 160.02 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "835d4610-14cb-43b0-b0c2-784a08417109")
-		(property "Reference" "J2"
-			(at 115.062 152.908 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Battery Input"
-			(at 120.65 160.0199 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "XT30PW-M:AMASS_XT30PW-M"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "AMASS"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "5 mm"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=eda"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "1.2"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=snap"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "XT30PW-M"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Amass"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SNAPEDA_PN" "XT30PW-M"
-			(at 111.76 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "N"
-			(uuid "ce98b99d-2bef-4c58-8fc6-ad28ac717478")
-		)
-		(pin "P"
-			(uuid "e1be84bd-0fd1-491a-9c58-523cb6d17fbe")
-		)
-		(instances
-			(project "POSHA"
-				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 154.94 118.11 90)
 		(unit 1)
@@ -10335,7 +10906,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Neosid_SM-NE127_HandSoldering"
 			(at 154.94 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -10651,7 +11222,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_1P1T_6x3.5mm_H5.0_APEM_MJTP1250"
 			(at 264.16 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -10890,7 +11461,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical"
 			(at 311.15 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -11027,6 +11598,87 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 248.92 71.12 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ee8fbec-a70d-433a-88a2-c72787ae03ff")
+		(property "Reference" "R9"
+			(at 250.952 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 250.952 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+			(at 250.698 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 248.92 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7bab267c-0438-4496-97e9-7de2c131a52b")
+		)
+		(pin "1"
+			(uuid "9ab604a3-4ec1-4281-ae8c-c75e66d4ee7e")
+		)
+		(instances
+			(project "POSHA"
+				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 120.65 139.7 90)
 		(unit 1)
 		(body_style 1)
@@ -11057,7 +11709,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder"
 			(at 120.65 141.478 90)
 			(hide yes)
 			(show_name no)
@@ -11138,7 +11790,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 198.12 175.5648 0)
 			(hide yes)
 			(show_name no)
@@ -11181,88 +11833,6 @@
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 247.65 189.23 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "afd5bac3-d57f-4dbe-8b8e-4ec694b1f7d1")
-		(property "Reference" "R6"
-			(at 250.19 187.9599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 250.19 190.4999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 249.428 189.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 247.65 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "79b161ae-504e-439f-99e0-6108b7657da1")
-		)
-		(pin "1"
-			(uuid "5da299fc-1e48-4235-8f4a-1a9d83081a21")
-		)
-		(instances
-			(project "POSHA"
-				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -11380,7 +11950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 178.7652 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -11742,7 +12312,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 163.5252 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -11791,234 +12361,7 @@
 		)
 	)
 	(symbol
-		(lib_id "XT30PW-M:XT30PW-M")
-		(at 156.21 157.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "be5fd973-4ab8-4215-ab5e-f0e09ae9268d")
-		(property "Reference" "J3"
-			(at 153.162 152.908 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Battery Input"
-			(at 147.32 157.4801 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "XT30PW-M:AMASS_XT30PW-M"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "AMASS"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "5 mm"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=eda"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "1.2"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=snap"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "XT30PW-M"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Amass"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SNAPEDA_PN" "XT30PW-M"
-			(at 156.21 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "N"
-			(uuid "b23c53df-c1d1-4166-85e3-f5310c6bdc69")
-		)
-		(pin "P"
-			(uuid "c6220410-31d4-441e-84bd-bd82361f9a5c")
-		)
-		(instances
-			(project "POSHA"
-				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(lib_name "XT30PW-M_1")
 		(lib_id "XT30PW-M:XT30PW-M")
 		(at 72.39 157.48 0)
 		(unit 1)
@@ -12049,7 +12392,7 @@
 				)
 			)
 		)
-		(property "Footprint" "XT30PW-M:AMASS_XT30PW-M"
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
 			(at 72.39 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -12228,10 +12571,10 @@
 				(justify bottom)
 			)
 		)
-		(pin "N"
+		(pin "1"
 			(uuid "ac3e5baa-01ed-4434-9409-962755002d7a")
 		)
-		(pin "P"
+		(pin "2"
 			(uuid "d378f26f-d86b-4310-b67f-23f5171618ac")
 		)
 		(instances
@@ -12277,7 +12620,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 192.278 170.18 90)
 			(hide yes)
 			(show_name no)
@@ -12482,87 +12825,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 238.76 189.23 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ce3f55d7-e35e-4a2b-89e9-287a6898dbc6")
-		(property "Reference" "R5"
-			(at 240.792 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 240.792 190.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 240.538 189.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 238.76 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 238.76 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b2f82855-6ec4-4623-bf81-d201b182b3b0")
-		)
-		(pin "1"
-			(uuid "60eed2d5-243f-44ef-9854-a494d64e9d12")
-		)
-		(instances
-			(project "POSHA"
-				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 111.76 134.62 270)
 		(unit 1)
@@ -12593,7 +12855,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 107.95 135.5852 0)
 			(hide yes)
 			(show_name no)
@@ -12673,7 +12935,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-04P_1x04_P5.00mm"
 			(at 254 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -12722,169 +12984,6 @@
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
 					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 257.81 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d0184513-50eb-4222-9415-d4f8902c4d73")
-		(property "Reference" "R9"
-			(at 255.778 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 255.778 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 256.032 71.12 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 257.81 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 257.81 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e2618bbb-df34-4cf6-958a-7c6381f4aab5")
-		)
-		(pin "1"
-			(uuid "00147943-9980-438f-a7d5-d580092e1146")
-		)
-		(instances
-			(project "POSHA"
-				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 248.92 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1b6d3f8-e12f-4866-a386-79eddcd0e84b")
-		(property "Reference" "R10"
-			(at 246.38 72.3901 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 246.38 69.8501 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 247.142 71.12 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 248.92 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "fa268056-7b35-4774-a05d-d0f4f6122c92")
-		)
-		(pin "1"
-			(uuid "3bfc4013-8ff0-4e95-a590-3e4bca210fe3")
-		)
-		(instances
-			(project "POSHA"
-				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -13001,7 +13100,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 188.468 96.52 90)
 			(hide yes)
 			(show_name no)
@@ -13044,6 +13143,233 @@
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "XT30PW-M_1")
+		(lib_id "XT30PW-M:XT30PW-M")
+		(at 111.76 160.02 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e06effe6-4feb-423e-9c42-7b91a28b9301")
+		(property "Reference" "J2"
+			(at 116.078 164.592 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Battery Input"
+			(at 115.57 164.592 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "AMASS"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5 mm"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "None"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=eda"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "1.2"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT30PW-M/AMASS/view-part/?ref=snap"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "XT30PW-M"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Amass"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SNAPEDA_PN" "XT30PW-M"
+			(at 111.76 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "a4a5e9fd-d950-4cf5-a81c-18c00ca8530c")
+		)
+		(pin "2"
+			(uuid "66d4601d-8acd-440b-a975-b909eff91f52")
+		)
+		(instances
+			(project "POSHA"
+				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -13396,7 +13722,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 165.862 129.54 90)
 			(hide yes)
 			(show_name no)
@@ -13517,88 +13843,6 @@
 			(project "POSHA"
 				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 158.75 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f97bb9c5-8689-4170-9142-6a8c99e57a5d")
-		(property "Reference" "Rfbt1"
-			(at 161.29 120.6499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 161.29 123.1899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.972 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 158.75 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f9b80310-e1ec-4f3a-8977-7537eb90b6fa")
-		)
-		(pin "2"
-			(uuid "37885d87-cabc-4306-bf92-fc00279f83a6")
-		)
-		(instances
-			(project "POSHA"
-				(path "/b34162fa-33c1-4036-912f-8394e10f1bec"
-					(reference "Rfbt1")
 					(unit 1)
 				)
 			)
